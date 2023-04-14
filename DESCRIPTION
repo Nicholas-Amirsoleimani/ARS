@@ -1,0 +1,19 @@
+Package: ARS
+Title: Adaptive Rejection Sampler
+Version: 0.0.0.9000
+Authors@R: 
+    person("Nick", "Amir", , "nickamir12@gmail.com", role = c("aut", "cre"))
+    person("Harpeth", "Lee", , "j-h-lee@berkeley.edu", role = c("aut", "cre"))
+    person("Paige", "Park", , "paige_park@berkeley.edu", role = c("aut", "cre"))
+Description: Contains ars function that allows adaptive rejection sampling from univariate, log-concave distributions. Allows user to specify the target distribution, number of samples, and abcissa.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.2
+Imports:
+    assertthat,
+    pracma
+Suggests: 
+    truncnorm,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3

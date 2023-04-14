@@ -1,0 +1,57 @@
+Grade: 93
+
+## ease of accessing package, help, tests:
+
+Fine.
+
+## main help page:
+
+Clear. Good set of examples.
+
+## quality of user interface:
+
+Good set of args with defaults, but bounds are required even if whole real line.
+
+## performance on my tests:
+
+Generally good.
+Fails with narrow normal density not centered at 0.
+Fails with double exponential.
+
+## t density output:
+
+Errors without indicating non log-concavity.
+
+## presence of tests:
+
+Tests pass. In general tests shouldn't make plots.
+5 warnings.
+
+Various unit tests, though many simply check the output type/length.
+Good variety of K-S tests.
+
+## code efficiency:
+
+0.2 sec for 5000 samples.
+
+## comments in code:
+
+Good in general. Would be helpful to have comments explaining logic of
+some of the more complicated parts, such as how the initial abscissae
+are determined.
+
+## code organization/clarity/elegance:
+
+I like the sampling of multiple values at once, but setting k=1000 is a lot, particularly early on in the algorithm so there is some wasted computation there.
+
+Strategy for initial abscissae looks good, though it didn't work for my narrow normal density test case.
+
+There's a lot of code. Should be possible to make it more concise.
+
+## equality of workload:
+
+It looks like Nick did rather more of the work.
+
+## writeup:
+
+Clear. I would have liked to see more examples, but they are present in the testing.
